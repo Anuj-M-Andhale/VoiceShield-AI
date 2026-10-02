@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoiceShield AI - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-grid"></div>
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- MAIN LOGIN CONTAINER -->
+    <div class="login-container">
+
+        <!-- LEFT SIDE -->
+        <div class="brand-section">
+
+            <div class="shield-container">
+                <div class="shield">
+                    🛡️
+                </div>
+            </div>
+
+            <h1>
+                Voice<span>Shield</span> AI
+            </h1>
+
+            <p class="subtitle">
+                AI-Powered Real-Time Voice Cloning
+                Detection & Prevention
+            </p>
+
+            <div class="online-status">
+                <span class="status-dot"></span>
+                AI Security System Online
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <span>✓</span>
+                    Real-Time Voice Analysis
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    AI Voice Cloning Detection
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Secure Call Monitoring
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Threat Detection & Alerts
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOGIN CARD -->
+        <div class="login-card">
+
+            <div class="card-header">
+
+                <div class="logo-small">
+                    VS
+                </div>
+
+                <div>
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Login to your security dashboard
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+
+                <!-- NAME -->
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <div class="input-box">
+
+                        <span class="icon">👤</span>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+                    <span
+                        class="error"
+                        id="nameError">
+                    </span>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+
+                        <span class="icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                    <span
+                        class="error"
+                        id="emailError">
+                    </span>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="input-box">
+
+                        <span class="icon">🔒</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="showPassword"
+                            class="show-password">
+                            👁
+                        </button>
+
+                    </div>
+
+                    <span
+                        class="error"
+                        id="passwordError">
+                    </span>
+
+                </div>
+
+
+                <!-- OPTIONS -->
+                <div class="options">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            id="remember">
+                        Remember me
+                    </label>
+
+                    <a
+                        href="#"
+                        onclick="forgotPassword(event)">
+                        Forgot password?
+                    </a>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+                <button
+                    type="submit"
+                    id="loginButton"
+                    class="login-button">
+
+                    <span id="buttonText">
+                        Secure Login
+                    </span>
+
+                    <span
+                        id="loader"
+                        class="loader">
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </form>
+
+
+
+
+    <script src="login.js"></script>
+
+</body>
+</html>
